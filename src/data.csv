@@ -1,0 +1,12 @@
+csv('https://vizhub.com/curran/datasets/auto-mpg.csv')
+.then(data => {
+  data.forEach(d => {
+    d.mpg = +d.mpg;
+    d.cylinders = +d.cylinders;
+    d.displacement = +d.displacement;
+    d.horsepower = +d.horsepower;
+    d.weight = +d.weight;
+    d.acceleration = +d.acceleration;
+    d.year = +d.year;
+  })
+})
